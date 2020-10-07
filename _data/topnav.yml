@@ -14,10 +14,7 @@ topnav_dropdowns:
   folders:
     - title: Help
       folderitems:
-        - title: Registration Portal 
-          external_url: http://appsframework.com/
-        - title: Admin Portal
-          external_url: http://appsframework.com/
+
         - title: AppSystemDeveloper
           external_url: http://appsframework.com/
         - title: Publisher
@@ -25,10 +22,7 @@ topnav_dropdowns:
         
     - title: Modules
       folderitems:
-        - title: Registration Portal 
-          url: /registration-portal/introduction.html
-        - title: Admin Portal
-          url: /admin-portal/introduction.html
+ 
         - title: AppSystem Developer
           url: /appsystem-developer/introduction.html
         - title: Web Development Workflow

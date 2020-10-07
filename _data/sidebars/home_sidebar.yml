@@ -8,12 +8,7 @@ entries:
   - title: Products
     output: single
     folderitems:
-    - title: Registration Portal 
-      url: /registration-portal/introduction.html
-      output: single
-    - title: Admin Portal
-      url: /admin-portal/introduction.html
-      output: single
+
     - title: AppSystem Developer
       url: /appsystem-developer/introduction.html
       output: single
@@ -23,3 +18,7 @@ entries:
     - title: Windows Development Workflow
       url: /windows-development-workflow/introduction.html
       output: single
+    - title: Database Development Workflow
+      url: /db-development-workflow/introduction.html
+      output: single
+

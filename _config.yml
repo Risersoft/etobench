@@ -102,8 +102,6 @@ defaults:
 
 sidebars:
 - home_sidebar
-- reg_sidebar
-- admin_sidebar
 - appsysdev_sidebar
 - mvcwf_sidebar
 - winwf_sidebar
