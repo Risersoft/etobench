@@ -32,7 +32,7 @@ After choosing any one option, the View form will appear.
 
 ![](/images/viewapplications.png)
 
-**View Key** ->User can assign view key it is should be unique for Publisher and Product
+**View Key** ->User can assign view key it is should be unique for Publisher and Product.
 
     E.g-listInvoice
 

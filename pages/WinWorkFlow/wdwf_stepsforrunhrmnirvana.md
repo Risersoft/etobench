@@ -23,7 +23,7 @@ C:\Users\Username\AppData\Roaming\Risersoft\HRMNirvana\Edit Setting File and mak
 ```
   <authority>http://login.risersoft.com</authority>
   <self-clientid>hrm.web</self-clientid>
-  <self-clientSecret>hrmweb123</self-clientSecret>
+  <self-clientSecret>******</self-clientSecret>
   <selfhost>true</selfhost>
 
 ```

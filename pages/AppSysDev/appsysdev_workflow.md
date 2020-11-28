@@ -50,7 +50,7 @@ Click on **New->WorkFlow**
 
 ![](/images/workflowgridcondition.jpg)
 
-**View Condition** ->user can set view like grid condition in this block.
+**View Condition** ->User can set view like grid condition in this block.
 
 >Children Tab
 

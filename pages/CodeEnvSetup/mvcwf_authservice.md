@@ -22,7 +22,7 @@ We can provide the Auth service reference in Sitesetting.config file’s “auth
 
 ```
 
-<settings authority="http://login.qa.appsnirvana.com" clientId="lms.web" lientSecret="lmsweb123" publisherid ="ff35cdd7-33af-414f-a8a0-901e97d7f7b9"
+<settings authority="http://login.qa.appsnirvana.com" clientId="lms.web" clientSecret="******" publisherid ="ff35cdd7-33af-414f-a8a0-901e97d7f7b9"
 publishername ="Risersoft" />
 
 ```
