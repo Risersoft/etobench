@@ -67,6 +67,8 @@ After choosing any one option, the Form/Report/Functions form will appear.
 
 **In Context Menu** ->User can marked if required right click menu for edit.
 
+**Report App Code** -> The prefix of the reportdataprovider should either be first appcode of entry in clientfrmprn/clientparent or mentioned in reportappcode.
+
 >Conditions Tab
 
 **AddXML** ->User can set condition for right click menu for add form.
