@@ -13,6 +13,7 @@ comments: false
 ## Create
 
 There are two options to create views:
+
 1. **New -> New View**
 
 2. **AppSystem -> Views->Right Click ->Copy View..**
@@ -52,7 +53,7 @@ After choosing any one option, the View form will appear.
 *A=Allow*
 
 
-**objPermissionRole** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
+**Object Permission Role** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
 
      E.g: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
 
@@ -315,7 +316,7 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **Layout**-> User can define view layout in this section.
 
-![](/images/layout.jpg)
+![](/images/layout.png)
 
 **Inverted View**->User can marked if require visibility of columns horizontally.
 
@@ -345,7 +346,7 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **Summary**->User can define summary totals for views in this block
 
-![](/images/definesummary.jpg)
+![](/images/definesummary.png)
 
 **Output** ->
 
@@ -371,7 +372,7 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **TotalsXML**->
 
-![](/images/TotalsXML.jpg)
+![](/images/TotalsXML.png)
 
 **Output** ->
 
@@ -392,7 +393,7 @@ User can define mobile views output in this block.
 
 Click on AppSystem -> Applications->Views
 
-![](/images/viewlist.jpg)
+![](/images/viewlist.png)
 
 
 ## Edit

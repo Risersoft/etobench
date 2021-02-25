@@ -1,6 +1,6 @@
 ---
-title: Permission
-keywords: Permission
+title: DB Permission
+keywords: DB Permission
 sidebar: appsysdev_sidebar
 permalink: appsystem-developer/db-permission.html
 folder: AppSysDev
@@ -23,7 +23,7 @@ Need to set value for **Adminbehave** in **ClientViews, ClientFrmPrn,ClientBrows
 *A=Allow*
 
 
-For **objPermissionRole** follow below steps:
+For **Object Permission Role** follow below steps:
 
 
 **Step.1** No need to make any changes for those objects which are called directly in MainMenuXML and can left as NULL.
