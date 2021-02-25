@@ -54,7 +54,7 @@ User can set conditions which should be available on view’s Grid. Conditions s
 
 User can add accessibility of Systableid for other Products.
 
-![](/images/entitychildrentab.jpg)
+![](/images/entitychildrentab.png)
 
 ## List
 

@@ -18,7 +18,7 @@ There are two options to create browser:
 
 After choosing any one option, the browser form will appear.
 
-![](/images/browseroptionstab.jpg)
+![](/images/browseroptionstab.png)
 
 >Browser Options Tab
 
@@ -45,6 +45,22 @@ After choosing any one option, the browser form will appear.
 **Product** ->User can select product in this block.
 
     E.g. ASP
+
+**Adminbehave** -> Need to set value of Adminbehave for accessibility as per below:
+
+*S=Require Super Admin*
+
+*T=Require Tenant Admin*
+
+*I=Ignore*
+
+*A=Allow*
+
+**objPermissionRole** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
+ 
+    e.g: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
+
+
 
 >Browser Definition Tab
 
@@ -101,7 +117,7 @@ After choosing any one option, the browser form will appear.
 
 >Children Tab
 
-![](/images/childrentab.jpg)
+![](/images/childrentab.png)
 
 ## List
 

@@ -69,7 +69,7 @@ Currently using three type of navigation.
 
 >Children Tab
 
-![](/images/navigationchildrentab.jpg)
+![](/images/navigationchildrentab.png)
 
 ##  List
 

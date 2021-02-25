@@ -54,7 +54,7 @@ Click on **New->WorkFlow**
 
 >Children Tab
 
-![](/images/workflowchildrentab.jpg)
+![](/images/workflowchildrentab.png)
 
 ## List
 

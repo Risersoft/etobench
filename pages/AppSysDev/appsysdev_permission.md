@@ -2,36 +2,39 @@
 title: Permission
 keywords: Permission
 sidebar: appsysdev_sidebar
-permalink: appsystem-developer/permission.html
+permalink: appsystem-developer/db-permission.html
 folder: AppSysDev
 hide_sidebar: false
 comments: false
 ---
 
-#  Permissions
+#  Notes for DB Permissions
 
-##  Create
+For dbpermission framework will auto pick it up from the **MainMenuXML + Adminbehave + objPermissionRole** fields
 
-Click on New->Permission
+Need to set value for **Adminbehave** in **ClientViews, ClientFrmPrn,ClientBrowse**.
 
-![](/images/permission.jpg)
+*S=Require Super Admin*
 
-**Applications** ->User can set application for created permission.
+*T=Require Tenant Admin*
 
-**Permission Name** ->User can set display name for created permission.
+*I=Ignore*
 
-**Permission Key** ->User can set permission key in this block it is should be unique for publisher and product.
+*A=Allow*
 
-**Product** ->User can select product for created permission.
 
-## List
+For **objPermissionRole** follow below steps:
 
-Click on Appsystem->Permissions
 
-![](/images/permissionslist.jpg)
+**Step.1** No need to make any changes for those objects which are called directly in MainMenuXML and can left as NULL.
 
-##  Edit
+**Step.2** If objects are not called directly in MainMenuXML then firstly find all these objects and make a list.
 
-Click on Appsystem->Permissions->Right Click->Edit Permission
+**Step.3** After make a list, find all possible navigation for called these objects & pick up the parent object's keys it may be more than one.
 
-![](/images/editpermission.jpg)
+**Step.4** These parent object's keys set in objPermissionRole for respective objects. Eg: key1, key2
+
+**Step.5** If parent object's key is not found for the same object type then we can enter cross object type parent by specifying **viewdef.key or frp.key or bro.key**
+       
+	   eg: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
+

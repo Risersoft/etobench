@@ -49,13 +49,12 @@ Click on New->New Sys Table
 
 User can add accessibility of Systableid for other Product.
 
-![](/images/systablechildrentab.jpg)
+![](/images/systablechildrentab.png)
 
 **Product**->User can set Products for accessibility of systableid.
 
 **AppList**->User can set applist here.
 
-**Permission List**->User can assign permisionkey which is defined in application menu definition.
 
 ## List
 

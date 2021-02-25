@@ -72,9 +72,9 @@ entries:
     url: /appsystem-developer/workflow.html
     folderitems:
     -
-  - title: Permissions
+  - title:  DB Permissions
     output: single
-    url: /appsystem-developer/permission.html
+    url: /appsystem-developer/db-permission.html
     folderitems:
     -
     

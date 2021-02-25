@@ -59,9 +59,23 @@ After choosing any one option, the Form/Report/Functions form will appear.
 
 >Applications Tab
 
-![](/images/applicationstab.jpg)
+![](/images/applicationstab.png)
 
-**Permission Key** ->User can set permission key for created form.
+**Adminbehave** -> Need to set value of Adminbehave for accessibility as per below:
+
+*S=Require Super Admin*
+
+*T=Require Tenant Admin*
+
+*I=Ignore*
+
+*A=Allow*
+
+
+**objPermissionRole** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
+
+    eg: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
+
 
 **Platforms** ->User can set platform for created form like window,web etc
 
@@ -85,7 +99,7 @@ After choosing any one option, the Form/Report/Functions form will appear.
 
 >Children Tab
 
-![](/images/formreportfunctionchildrentab.jpg)
+![](/images/formreportfunctionchildrentab.png)
 
 ## List
 

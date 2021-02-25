@@ -59,7 +59,7 @@ Click on New->New Filter
 
 > Children Tab
 
-![](/images/filterchildrentab.jpg)
+![](/images/filterchildrentab.png)
 
 **Output** ->
 

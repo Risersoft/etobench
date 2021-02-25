@@ -14,11 +14,12 @@ comments: false
 
 There are two options to create views:
 1. **New -> New View**
+
 2. **AppSystem -> Views->Right Click ->Copy View..**
 
 After choosing any one option, the View form will appear.
 
-![](/images/createview.jpg)
+![](/images/createview.png)
 
 **Product** -> Firstly select product in which views to be created.
 
@@ -39,6 +40,22 @@ After choosing any one option, the View form will appear.
 **StrView** ->User can set display name for view.
 
     E.g-Invoice
+	
+**Adminbehave** ->Need to set value of Adminbehave for accessibility as per below :
+
+*S=Require Super Admin*
+
+*T=Require Tenant Admin*
+
+*I=Ignore*
+
+*A=Allow*
+
+
+**objPermissionRole** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
+
+     E.g: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
+
 
 **Visualizations** ->User can select grid visualization for View output.
 
@@ -77,19 +94,11 @@ After choosing any one option, the View form will appear.
 
 
 
-**Permission Key**-> User can set permission keys for created view.
-
-    E.g-ID_SaleInvoices
-
-![](/images/viewpermissionkey.png)
-
-Default value is zero.
-
 >DataSource Tab
 
 User can set data source SQL for view output in this section.
 
-![](/images/viewdatasourcetab.jpg)
+![](/images/viewdatasourcetab.png)
 
 **AppliFilters** ->User can set list of filters which are applicable on this view.
 
@@ -377,7 +386,7 @@ User can define mobile views output in this block.
 >Children Tab
 
 
-![](/images/viewchildrentab.jpg)
+![](/images/viewchildrentab.png)
 
 ## List
 
