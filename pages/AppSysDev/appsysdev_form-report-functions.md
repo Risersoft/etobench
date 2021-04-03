@@ -59,7 +59,7 @@ After choosing any one option, the Form/Report/Functions form will appear.
 
 >Applications Tab
 
-![](/images/applicationstab.png)
+![](/images/applicationstab.jpg)
 
 **Adminbehave** -> Need to set value of Adminbehave for accessibility as per below:
 
@@ -99,7 +99,7 @@ After choosing any one option, the Form/Report/Functions form will appear.
 
 >Children Tab
 
-![](/images/formreportfunctionchildrentab.png)
+![](/images/formreportfunctionchildrentab.jpg)
 
 ## List
 
