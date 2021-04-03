@@ -109,7 +109,7 @@ In this section, we have define definition of forms in XML format.
       <COL KEY="CurrencyRateID" HIDDEN="true"/>	
       </formatxml>
 	  
-	 ```
+  ```
 	 
 **Step-6** -> We can define childrensql like this.
 
@@ -148,7 +148,8 @@ In this section, we have define definition of forms in XML format.
   ```
    <prepeditxml>
    <BAND INDEX="0" TABLE="sales.SalesOrderDetail" IDFIELD="SalesOrderDetailID"></BAND>
-   ```
+   
+  ```
    
 ![](/images/weboutput-salesorder-heading.png)
 
