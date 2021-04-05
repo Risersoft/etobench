@@ -26,15 +26,15 @@ In this section, we have define definition of forms in XML format.
 
 ![](/images/definition-define-combo.png)
 
-**2.1.** *Combos* -> We can use tags for combos <combos> as starting tag </combos> as ending tag.
+**2.1.** *Combos* -> We can use tags for combos < combos > as starting tag < /combos > as ending tag.
 
 **2.2** *Table* -> We can use tags for table <table> as starting tag </table> as ending tag and set lookup sql for combos between <table> and </table>.
 
-**2.3** *Key* -> We set key name for lookup sql between tags <key> and </key>.
+**2.3** *Key* -> We set key name for lookup sql between tags < key > and < /key >.
    
 ![](/images/definition-key-example.jpg)
 
-**2.4** *Sql* -> We can put sql query between tags <sql> and </sql>
+**2.4** *Sql* -> We can put sql query between tags < sql > and < /sql >
 
 ![](/images/definition-sql-example.jpg)
 
@@ -42,9 +42,9 @@ In this section, we have define definition of forms in XML format.
 
 ![](/images/definition-map-combokey.png)
 
-**3.1** *Lookups* -> we can use tags for define lookups. <lookups> as starting tag </lookups> as ending tag.
+**3.1** *Lookups* -> we can use tags for define lookups. < lookups > as starting tag < /lookups > as ending tag.
 
-**3.2** *field* -> we can put define combo’s key between <key> and </key> 
+**3.2** *field* -> we can put define combo’s key between < key > and < /key > 
 
 **3.3** *fieldname* -> we can set column’s name of mainsql or childrensql for mapping with defined combos.
 
@@ -71,12 +71,12 @@ In this section, we have define definition of forms in XML format.
 
 ![](/images/definition-define-mainsql.png)
 
-**5.1** *mainsql* -> We can use tags for define mainsql <mainsql> as starting tag </mainsql> as ending tag and put required sql query for my row between <mainsql> & <mainsql>.
+**5.1** *mainsql* -> We can use tags for define mainsql < mainsql > as starting tag < /mainsql > as ending tag and put required sql query for my row between <mainsql> & <mainsql>.
 
 ![](/images/definition-mainsql-example.jpg)
 
 
-**5.2** *IDField* ->we can put idfied between tags <IDField> and </IDField>.
+**5.2** *IDField* ->we can put idfied between tags < IDField > and < /IDField >.
 
 ![](/images/definition-idfield-example.jpg)
 
@@ -105,7 +105,7 @@ In this section, we have define definition of forms in XML format.
 
 ![](/images/definition-key2-example.jpg)
 
-**6.4** *Sql* -> we can use this tags for set sql query and used <sql> as starting tag </sql> as ending tag and put required sql query between <sql> & <sql>.
+**6.4** *Sql* -> we can use this tags for set sql query and used < sql > as starting tag < /sql > as ending tag and put required sql query between <sql> & <sql>.
 
 ![](/images/definition-sql2-example.jpg)
 
