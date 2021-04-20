@@ -57,6 +57,15 @@ After choosing any one option, the View form will appear.
 
      E.g: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
 
+**Generate** ->Using this button we can see output of select SQL clicking on Generate Button.
+
+![](/images/generatebutton.png)
+
+**UseIDX** -> We can used IDX and check output of select SQL by giving idx value in UseIDX column and verify output after pressed Generate button.
+
+![](/images/fixedwhere.png)
+
+![](/images/useridx.png)
 
 **Visualizations** ->User can select grid visualization for View output.
 

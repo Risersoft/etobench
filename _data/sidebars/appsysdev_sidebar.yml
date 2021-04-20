@@ -85,6 +85,12 @@ entries:
     folderitems:
     -
     
+  - title:  Publish AppDB File
+    output: single
+    url: /appsystem-developer/publish-appdb-file.html
+    folderitems:
+    -    
+    
   - title:  Publishing to SaasMatter
     output: single
     url: /appsystem-developer/publish-to-saasmatter.html

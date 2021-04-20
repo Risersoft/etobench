@@ -45,7 +45,9 @@ We can add require admin portal entries by [link](http://ackme.admin.saasmatter.
 
 ![](/images/Tier1.png)
 
-## 3. Create new account under this publisher on [Link](http://ackme.portal.saasmatter.com/):
+## 3. Create new account under this publisher 
+
+To create new account in particular publisher , click on [link](http://ackme.portal.saasmatter.com/).
 
 ![](/images/AddNewAccount.png)
 
@@ -59,7 +61,7 @@ We can create new account for appsframework using [link](http://portal.risersoft
 
 ![](/images/NewUser.png)
 
-## 5. Ensure ProductID should be same as defined in step 2.
+## 5. Ensure ProductID should be same as defined in Produt and Tier. 
 
 
 ## 6. Can define apps, views and forms in appsframework.com
@@ -68,7 +70,9 @@ We can define applications, views and forms under new menu after login on [link]
 
 ![](/images/NewMenu.png)
 
-## 7. Now we can login to [link](http://ackme.saasmatter.com/home/publish) 
+## 7. Login
+
+Now we can login to [link](http://ackme.saasmatter.com/home/publish).
 
 ![](/images/AfterLogin.png)
 
