@@ -1,13 +1,12 @@
 ---
 title: Applications
 keywords: Applications
-sidebar: appsysdev_sidebar
-permalink: appsystem-developer/applications.html
-folder: AppSysDev
+sidebar: appsysdevweb_sidebar
+permalink: appsystem-developer-web/applications.html
+folder: AppSysDevWeb
 hide_sidebar: false
 comments: false
 ---
-
 
 # Applications
 
@@ -21,7 +20,7 @@ There are two options to create applications:
 
 After choosing any one option, the application form will appear.
 
-![](/images/application.jpg)
+![](/images/applicationweb.png)
 
 >Application Options Tab
 
@@ -42,7 +41,7 @@ After choosing any one option, the application form will appear.
 **ApplicationName** ->User can set application Name for display.
 
     E.g. ApplicationCode= ASP Solution
-
+	
 **Product** ->User can select a Product for application it is compulsory.
 
     E.g.ASP	
@@ -69,93 +68,109 @@ After choosing any one option, the application form will appear.
 **Object Permission Role** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
 
     eg: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice
-	
+
+
 
 >Menu Definition Tab
 
 User can define application menu’s here in XML format.
 
-!![](/images/menudefinitiontab.jpg)
+!![](/images/menudefinitiontabweb.png)
 
 ##### **Body Syntax**->
 
-&lt;ROOT>
+**&lt;ROOT>**      
 
-  &lt;TOOLBAR KEY=" key for application menu " BEFORE="1">
-	&lt;/TOOLBAR>
+  **&lt;TOOLBAR** KEY="mnuMain" BEFORE="1">     
 
-  &lt;/ROOT>
+   **&lt;/TOOLBAR>**    
 
-**Description**:
+**&lt;/ROOT>**
 
-**&lt;ROOT>**->Starting Tag.
+##### **Define Menu Name**-> 
 
- **TOOLBAR KEY**-> Need to set Main menu key for application menu definition.
+We can define menu name using below xml tags.
 
-  **BEFORE**->
+![](/images/DefineMenuNameXML.png)
 
-**&lt; /TOOLBAR>** Ending Tag.
+_**Description**_:
 
-**&lt;/ROOT>** ->Ending Tag.
+**&lt;TOOL> &lt;/TOOL>**: Starting & Ending Tag
 
-    E.g. TOOLBAR KEY =mnuMain    BEFORE="1">
+**STYLE**: we can use Style tag for menu category
 
-##### **New/Import Option Syntax**->
+    E.g-> STYLE="MNU"
 
+**NAME**: We can use Name tag for define menu name as per requirement
 
-&lt;TOOL STYLE="MNU" NAME="MenuName" KEY="IDFormenu" >
+    E.g-> NAME="Human Resources"
 
-  &lt;TOOL BG="1"  STYLE="BUT" NAME="SubMenuName" KEY="IDForSubMenuName " CAT="Category">
+**KEY**: Every menu & menu items have a unique key, we set key like this.
 
-&lt;TAG>
+    E.g-> KEY="ID_mnuadvdemHR"
 
-&lt;FRM  KEY="Form’s Name">
-	     &lt;PARAMS CompanyID="%IDField%" DocType="TP" ACTION="Import"/>
-                   &lt;/FRM>
-	&lt;/TAG>
+**ICON**: we can give image name in this tag for menu like this.
 
-&lt;/TOOL>		
-&lt;TOOL BG="1" STYLE="BUT" NAME="SubMenuName" KEY="IDForSubMenuName" CAT=" Category ">
+    E.g-> ICON= "HumanResources.png"
+	
+**Output**->
 
-&lt;TAG>
+!![](/images/DefineMenuNameOutput.png)
 
- &lt;FRM KEY="FormName"/>
-
- &lt;/TAG>
-
-&lt;/TOOL>
-
-&lt;/TOOL>
 
 ##### **Listing Option Syntax**->
 
-&lt;TOOL BG="1" STYLE="BUT" NAME="SubMenuName" KEY="IDForSubMenuName" >
+We can define sub menus using below xml tags.
 
-&lt;TAG>
+!![](/images/ListingMenuXML.png)
 
- &lt;VIEW KEY="View’s Name">				
-     &lt;/VIEW>
+_**Description**_:
 
- &lt;/TAG>
-&lt;/TOOL>
+**&lt;TOOL> & &lt;/TOOL>**: Starting & Ending Tag
+
+**STYLE**: we can use Style tag for menu category.
+
+    E.g-> STYLE="BUT"
+
+**NAME**: We can use Name tag for define menu name as per requirement
+
+    E.g-> NAME="Department"
+
+**KEY**: Every menu & menu items have a unique key, we set key like this.
+
+    E.g-> KEY="ID_AdvDep"
+
+**TAG**: We can set view key for submenu between <TAG> and </TAG> like this.
+
+   &lt;TAG>           
+
+   &lt;VIEW KEY="ListAdvdemDepartment"/>        
+
+   &lt;/TAG>   
+
+##### **New Menu**-> 
+
+We can define ne menu using below xml tags.
+
+!![](/images/NewMenuXML.png)
 
 
 _**Description**_:
 
+**BG** ->Used for separator between two menus.
 
-STYLE -Need to set MNU for Menu and BUT for SubMenu.
+   E.g-> BG="1"
 
-**NAME** ->User can set MenuName and SubMenuName in this block.
 
-    E.g-> Master, Company, New Company
+**STYLE** -> Need to set BUT for SubMenu.
 
-**KEY**->User can set Keys for IDFormenu and IDForSubMenuName in this block. It is should be Unique.
+**NAME** ->User can set New menu  in this block.
 
-    E.g-> ID_Master, ID_MnuComp, ID_MnuNewComp, ID_GstImportVouchTaxpComp
+    E.g-> New Application
 
-**BG**->Used for separator between two menu.
+**KEY**->User can set Keys for new menu in this block. It is should be Unique.
 
-    E.g-> BG="1"  
+    E.g-> ID_NewApp
 
 **CAT**-> User can set Category in this block.
 
@@ -164,33 +179,63 @@ STYLE -Need to set MNU for Menu and BUT for SubMenu.
 **TAG** ->All Forms and views key should be define between
 &lt;TAG> and &lt;/TAG>
 
-**FRM  KEY**->User Can set Form Key Name which is define in table Clientfrmprn.
+**FRM  KEY**->User Can set Form Key Name.
 
-    E.g-> frmGstImportVouch, frmGstCompany
-
-**PARAMS**->User can pass default values for called forms.
-
-    E.g-> CompanyID= IDField like CompanyID define in Systables
-
-          DocType=TP
-
-          ACTION->Require in case of Import Data.
-
-          E.g->Import
-
-**VIEW KEY**->User can set View name which is define in table Clientviews.
-
-    E.g-> ListgstComp
+    E.g-> frmApp
 	
-**Output**->
+
+![](/images/applicationfrmkey.png)
+
+>Conditions Tab
+
+**Data XML**
+
+![](/images/dataxmlweb.png)
+
+*OutPut* -> This Data XML is defined for grouping of List.
+
+**Mobile Menu XML**
+
+![](/images/mobilemenuxmlweb.png)
+
+*Tags For Body Syntax:*
+
+<ROOT>
+
+<TOOLBAR KEY="mnuMain" BEFORE="1">
+
+</TOOLBAR>
+
+</ROOT>
 
 
-![](/images/viewapplication.jpg)
+*Tags for Menu:*
+
+<TOOL BG="1" KEY="ID_Myprofile" STYLE="BUT" NAME="My Profile" ICON = "MyProfile.png">
+
+<TAG>
+
+<VIEW KEY="ViewMyProfile"></VIEW>
+
+</TAG>
+
+</TOOL>
+
+*Tags for Image Icon:*
+
+We can used ICON for item menu image.
+  
+   Eg. ICON = "MyProfile.png"
+   
+*OutPut:*
+
+![](/images/mobileiconweb.png)
+
 
 
 >Info Tab
 
-![](/images/infotab.jpg)
+![](/images/infotabweb.png)
 
 **StartUp Tool**->Set Menu keys for default output when application run.
 
@@ -216,17 +261,17 @@ This is defined in MenuDefinition.
 
 **CommonMenu**->Marked for Showing Default common Menu’s.
 
-![](/images/commonmenu.jpg)
+![](/images/commonmenuweb.png)
 
 
 ## List
 
 Click on AppSystem -> Applications
 
-![](/images/applicationslist.jpg)
+![](/images/applicationslistweb.png)
 
 ## Edit
 
 Click on AppSystem -> Applications->Right Click->Edit In App Editor
 
-![](/images/editapplication.jpg)
+![](/images/editapplicationweb.png)
