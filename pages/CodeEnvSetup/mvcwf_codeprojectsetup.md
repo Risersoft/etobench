@@ -21,12 +21,38 @@ Connect to the TFS server in visual studio using that server link which will be 
 
 ![](/images/team-explorer.png)
 
-**Step 2**:
+**Step 2**: *Point 1:* Open Solution -> Click on Team Explorer Window.
 
-Map & get the project in TFS and map to the
-local path in system, you will map your projects on your system.
+![](/images/solution-team-explorer.png)
 
-![](/images/tfs-map.png)
+*Point 2:* Click on Tab -> Source Control Explorer.
+
+![](/images/source-control-explorer.png)
+
+*Point 3:* Click on Icon -> Home.
+
+![](/images/home-icon.png)
+
+*Point 4:* Click on Icon -> Manage Connections.
+
+![](/images/manage-connections-icon.png)
+
+*Point 5:* Click on Manage Connections -> Right click on Projects -> Connect.
+
+![](/images/manage-connections-connect.png)
+
+*Point 6:* Create a folder where you want to map the projects.
+
+e.g. :- In E:\vs
+
+![](/images/create-folder.png)
+
+*Point 7:* Right click on rsds.visualstudio.com\rsds and click on Get Latest Version. Then all projects are mapped in the folder previously created.
+
+![](/images/get-latest-version.png)
+
+*Point 8:* Now the Projects are ready to start.
+
 
 **Step 3**:
 
