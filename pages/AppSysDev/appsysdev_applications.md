@@ -21,7 +21,7 @@ There are two options to create applications:
 
 After choosing any one option, the application form will appear.
 
-![](/images/application.jpg)
+![](/images/application.png)
 
 >Application Options Tab
 
@@ -229,4 +229,4 @@ Click on AppSystem -> Applications
 
 Click on AppSystem -> Applications->Right Click->Edit In App Editor
 
-![](/images/editapplication.jpg)
+![](/images/editapplication.png)

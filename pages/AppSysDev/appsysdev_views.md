@@ -113,6 +113,7 @@ User can set data source SQL for view output in this section.
 **AppliFilters** ->User can set list of filters which are applicable on this view.
 
     E.g- Comp,Campus ..etc
+	
 ![](/images/viewapplifilters.jpg)
 
 **Type** ->User can set Data source query type Default value is Fields but user can it to Template as per requirement.
@@ -193,13 +194,23 @@ User can set data source SQL for view output in this section.
 
 ![](/images/filteroutput.jpg)
 
-**WhereParam** ->User can create Owen where conditions as per requirement and apply particular on menu’s in menu definition.
+**WhereParam** ->
+
+*How to Create where param:*
+
+
+User can create user define where conditions as per requirement between starting tag & ending tag and apply particular on menu’s in menu definition.
+
+     E.g: <INVSL> Starting Tag & </INVSL> ending tag.DocType=’IS’ User define condtion
+
 
 ![](/images/WhereParam.png)
 
+*How to use where param:*
+
     E.g. Use WhereParam conditions in MenuDefination
 
-![](/images/WhereParaminmenudifination.jpg)
+![](/images/WhereParaminmenudifination.png)
 
 **TransformBefore**-> TransformBefore worked before view output generated.
 
@@ -279,9 +290,9 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **SERIAL** ->Set true if require serial number on MMR output.
 
-**DETAILHTFACT **->Set row height for MMR output.
+**DETAILHTFACT**->Set row height for MMR output.
 
-**HEADER PREFIX **->Set Header of MMR output.
+**HEADER PREFIX**->Set Header of MMR output.
 
 **EVAL** ->Set Evaluate value like date
 
@@ -301,27 +312,57 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **Complex** -> User can link multiple views through a key field in this section.
 
-![](/images/complex.jpg)
+![](/images/complex.png)
 
-**&lt;DISPGRID>** ->Starting tag
+DISPGRID-> We can set display grid between <DISPGRID>starting & <DISPGRID> ending tags.
 
-**&lt;/DISPGRID>** -> Ending tag
+    e.g: <DISPGRID> 
+         <VIEW KEY="ViewStore"/>  
+         </DISPGRID>
+		
+MAINGRID -> We can define main grid using < MAINGRID >starting & < MAINGRID > ending tags.
 
-**&lt;MAINGRID>** ->Starting tag
+    e.g: <MAINGRID>    
+         <VIEW KEY="ListAdvdemStore">    
+         </MAINGRID>
+		 
+VIEW KEY -> User can set view for display grid.
 
-**VIEW KEY** -> User can set view for display grid
+    e.g: <VIEW KEY="ListAdvdemStore">
+	
+	
+MODROW -> We can applied user define conditions like where condition, hidecolums etc.
 
-**&lt;MAINGRID>** -> Ending tag
+    e.g: <MODROW>    
+         <SQLWHERE2>BusinessEntityID= %idx% </SQLWHERE2>  
+         <HIDECOLS>Name</HIDECOLS>
+         </MODROW>
+		 
+SQLWHERE2-> We can applied where condition between <SQLWHERE> & </SQLWHERE>.
 
-**&lt;MAKEREL INSERTAT** ->set default value 0.
+    e.g :< MODROW>    
+         <SQLWHERE2>BusinessEntityID= %idx% </SQLWHERE2>  
+         </MODROW>
 
- **BANDS** ->User can combine all child’s view in this section.
+HIDECOLS-> We can hide columns using <HIDECOLS> & </HIDECOLS>.
 
- **FIELD** ->Set idfield
+    e.g :< MODROW>    	
+         <HIDECOLS>Name</HIDECOLS>
+         </MODROW>
+		
+		
+MAKEREL INSERTAT ->set default value 0.
 
- **CHILD** ->Set child using give value 1,2 etc.
+BANDS ->User can combine all child’s view in this section.
 
-![](/images/viewkey.jpg)
+FIELD ->Set idfield
+
+CHILD ->Set child using give value 1, 2 etc.
+
+*Output*
+
+![](/images/complexoutput.png)
+
 
 **Layout**-> User can define view layout in this section.
 
@@ -357,6 +398,13 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 ![](/images/definesummary.png)
 
+<SUMARY COL KEY> Using this tag we can set db column name which total is required.
+
+KEY : Set total key word Totbal
+FORMAT: we can set format for required total values.
+TYPE: In this tag we can set SUM
+
+
 **Output** ->
 
 ![](/images/summaryoutput.jpg)
@@ -365,7 +413,46 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 **ChartXML**->
 
-![](/images/chartxml.jpg)
+![](/images/chartxml.png)
+
+<clsChartModel>  is starting Tag & </clsChartModel>  is ending tag of chart definition.
+
+<Legend>  & </Legend>  We can define orientation & position between starting & ending tag of Legend.
+
+     E.g
+	 
+<Legend>        
+<Orientation>Auto</Orientation>   
+<Position>None</Position>    
+<Title />    
+</Legend>
+
+    
+<ChartType> We can set chart type of charts like Column,LineSymbols,Pie,Area between <ChartType>  & </ChartType> 
+
+<Series>   We can define multiple series for showing data grid between <Series> & </Series>.   
+    
+     Like this: 
+	 
+<Series>      
+<clsSeriesModel> 
+<ChartType>column</ChartType>      
+<Binding>Empcount</Binding>          
+<BindingX>GroupName</BindingX>     
+</clsSeriesModel>      
+</Series>   
+
+
+<clsSeriesModel> We can define layout of chart’s series between <clsSeriesModel> & clsSeriesModel> 
+
+<Binding> We can set column’s name which values we want to show horizontally or respect of Y axis.
+
+<BindingX> We can set column’s name which values we want to show vertically or respect of X axis.
+ 
+*Output ->*
+
+![](/images/chartxmloutput.png)
+
 
 >Dashboard Tab
 
@@ -377,11 +464,58 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 ![](/images/DashBoardXML.png)
 
+<DASHBOARD>: <DASHBOARD> is starting tag & </DASHBOARD> is ending tag.
+
+**How to define a Panel:** We can define a panel for dashboard using below code.
+
+<CONTENT>   
+<PANEL>     
+<VIEW KEY="chtAdvdemDepvsEmp"></VIEW>    
+</PANEL>   
+</CONTENT>
+ 
+**How to define Layout of dashboard:**
+
+<LAYOUT>    
+<ROW>     
+<COLUMN CSSCLASS="col-md-12">    
+<ROW>       
+<COLUMN PANEL="0"  CSSCLASS="col-md-6"/>    
+<COLUMN PANEL="1"  CSSCLASS="col-md-6"/>      
+</ROW>      
+<ROW>    
+<COLUMN PANEL="2"  CSSCLASS="col-md-6"/>       
+<COLUMN PANEL="3"  CSSCLASS="col-md-6"/>     
+</ROW>     
+</COLUMN>    
+</ROW>   
+</LAYOUT>
+
+*Output ->*
+
+![](/images/Dashboardoutput.png)
+
+
 >Totals Tab
 
 **TotalsXML**->
 
 ![](/images/TotalsXML.png)
+
+TOTAL is starting tag and </TOTAL> is ending tag.
+
+TITLE -> we can set title for display.
+
+FIELD <FIELD>  is starting tag and </FIELD> is ending tag.
+
+KEY -> We set column for which total required like this.
+
+KEY=”Taxval”
+
+SUM-> We can use sum key word for calculate sum value of set column.
+
+  E.g: SUM=”SUM”
+
 
 **Output** ->
 
@@ -391,7 +525,61 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 User can define mobile views output in this block.
 
-![](/images/listtab.jpg)
+![](/images/listtab.png)
+
+**Config:** We can define all list view xml code between <Config> & </Config>
+
+  E.g.:
+  
+![](/images/listtabconfig.png)
+ 
+**Headline:** We can define heading using <Headline> & </Headline>.
+
+  E.g.:
+  
+![](/images/listtabheadline.png)
+
+**Template:** we can set caption, formatting for passed arguments with position values starting 0 like {0}, {1}, {2}…etc.
+
+  E.g.:
+
+![](/images/listtabtemplate.png)
+
+**Arguments:** we can pass database columns as arguments like this.
+
+  E.g.:
+ 
+![](/images/listtabarguments.png)
+
+**Secondline:** we can set sub heading using < Secondline> & </ Secondline> tags.
+
+  E.g.:
+  
+![](/images/listtabsecondline.png)
+
+**Summary:** We can set details for summary using <summary> & </summary> tags.
+
+  E.g.:
+  
+![](/images/listtabsummary.png)
+
+We can merge all details in a single line using | key words like this.
+
+  E.g.:
+  
+![](/images/listtabsummary1.png)  
+
+
+**Punchtext:** we can set index or any special text parallel of main Headline using Punchtext> & <Punchtext> tags.
+
+  E.g.:
+  
+![](/images/listtabpunchtext.png)
+
+**Output**
+
+![](/images/listtaboutput.png)
+
 
 >Children Tab
 
