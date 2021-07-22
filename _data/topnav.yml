@@ -17,15 +17,15 @@ topnav_dropdowns:
 
         - title: AppSystemDeveloper
           external_url: http://appsframework.com/
-        - title: Publisher
+        - title: Risersoft
           external_url: http://www.risersoft.com/
         
     - title: Modules
       folderitems:
  
-        - title: AppSystem Developer
+        - title: AppFx Desktop
           url: /appsystem-developer/introduction.html
-        - title: AppSystem Developer Web
+        - title: AppFx Developer
           url: /appsystem-developer-web/introduction.html         
         - title: Web Development Workflow
           url: /web-development-workflow/introduction.html

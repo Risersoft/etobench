@@ -72,47 +72,47 @@ we can define definition for a browser like this.
     
 **How to define BrowserID:**
 
-<ID>BROWSEID</ID>: This tag used to define browser id.
+< ID>BROWSEID< /ID>: This tag used to define browser id.
 
     E.g :   <ID>BROWSEID</ID>
 
 **How to set display grid:**
 
-<DISPGRID></DISPGRID>: This tag used to set display grid.
+< DISPGRID> < /DISPGRID>: This tag used to set display grid.
    
     E.g:  	
-<DISPGRID>
-<VIEW KEY="viewCustomer" />
-</DISPGRID>
+< DISPGRID>
+< VIEW KEY="viewCustomer" />
+< /DISPGRID>
 
 **How to define a tree:**
 
-<TREE></TREE>Tree tag is body syntax. 
+< TREE>< /TREE>Tree tag is body syntax. 
 
 
 **How set Sql for data source:**
 
-<_DT>: Using this we can set sql for data source.
+< _DT>: Using this we can set sql for data source.
 
     E.g:
 	
-<_DT KEY="o" SQL="select CustomerID,isnull(Title,'')+' '+isnull(FirstName,'')+' '+isnull(MiddleName,'')+' '+isnull(LastName,'') as Customer from  Sales.Customer INNER JOIN Person.Person  ON Customer.PersonID = Person.BusinessEntityID where CustomerID = $BROWSEID$ order by Title,FirstName" />
-
+< _DT KEY="o" SQL="select CustomerID,isnull(Title,'')+' '+isnull(FirstName,'')+' '+isnull(MiddleName,'')+' '+isnull(LastName,'') as Customer from  Sales.Customer INNER JOIN Person.Person  ON Customer.PersonID = Person.BusinessEntityID where CustomerID = $BROWSEID$ order by Title,FirstName" />
+ 
 **How to define local variable to store values:**
 
-<_SET>: This tag used to define variable for store data locally.
+< _SET>: This tag used to define variable for store data locally.
 
     E.g:
 	
-<_SET VAR="CUST" VALUE="#MEMBER($o$,CustomerID)#"/>
+< _SET VAR="CUST" VALUE="#MEMBER($o$,CustomerID)#"/>
 
 **How to add a Node:**
 
-<NODE>: Using this tag we can define Node as per requirement.
+< NODE>: Using this tag we can define Node as per requirement.
 
     E.g:
 	
-<NODE PARENT="ID1"  KEY="Custso" CAPTION="Sale Orders">
+< NODE PARENT="ID1"  KEY="Custso" CAPTION="Sale Orders">
 
 *NODE PARENT:* Using this we can set parent id for to be added node.
 
@@ -122,13 +122,19 @@ we can define definition for a browser like this.
 
 **How to set view for added node:**
 
-<VIEW KEY >: using this tag we can set view for added node.
-<VIEW KEY="ListAdvdemCustomer">
-FILTER KEY              
-<FILTER KEY="customer">
-<VALUE VALUE1="$CUST$" />
-</FILTER>
-</VIEW>
+< VIEW KEY >: using this tag we can set view for added node.
+
+< VIEW KEY="ListAdvdemCustomer">
+
+FILTER KEY 
+             
+< FILTER KEY="customer">
+
+< VALUE VALUE1="$CUST$" />
+
+< /FILTER>
+
+< /VIEW>
 
 
 *Output* ->

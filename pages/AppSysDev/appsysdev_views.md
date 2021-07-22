@@ -398,16 +398,20 @@ CHILD ->Set child using give value 1, 2 etc.
 
 ![](/images/definesummary.png)
 
-<SUMARY COL KEY> Using this tag we can set db column name which total is required.
+< SUMARY COL KEY > Using this tag we can set db column name which total is required.
 
-KEY : Set total key word Totbal
-FORMAT: we can set format for required total values.
-TYPE: In this tag we can set SUM
+*KEY:* Set total key word Totbal.
+
+*FORMAT:* we can set format for required total values.
+
+*TYPE:* In this tag we can set SUM.
 
 
 **Output** ->
 
 ![](/images/summaryoutput.jpg)
+
+
 
 >Chart Tab
 
@@ -415,39 +419,39 @@ TYPE: In this tag we can set SUM
 
 ![](/images/chartxml.png)
 
-<clsChartModel>  is starting Tag & </clsChartModel>  is ending tag of chart definition.
+< clsChartModel >  is starting Tag & < /clsChartModel >  is ending tag of chart definition.
 
-<Legend>  & </Legend>  We can define orientation & position between starting & ending tag of Legend.
+< Legend >  & < /Legend >  We can define orientation & position between starting & ending tag of Legend.
 
-     E.g
+    E.g
 	 
-<Legend>        
-<Orientation>Auto</Orientation>   
-<Position>None</Position>    
-<Title />    
-</Legend>
+< Legend >        
+< Orientation >Auto< /Orientation>   
+< Position >None< /Position>    
+< Title />    
+< /Legend>
 
     
-<ChartType> We can set chart type of charts like Column,LineSymbols,Pie,Area between <ChartType>  & </ChartType> 
+< ChartType> We can set chart type of charts like Column,LineSymbols,Pie,Area between <ChartType>  & </ChartType> 
 
-<Series>   We can define multiple series for showing data grid between <Series> & </Series>.   
+< Series>   We can define multiple series for showing data grid between <Series> & </Series>.   
     
      Like this: 
 	 
-<Series>      
-<clsSeriesModel> 
-<ChartType>column</ChartType>      
-<Binding>Empcount</Binding>          
-<BindingX>GroupName</BindingX>     
-</clsSeriesModel>      
-</Series>   
+< Series>      
+< clsSeriesModel> 
+< ChartType>column</ChartType>      
+< Binding>Empcount</Binding>          
+< BindingX>GroupName</BindingX>     
+< /clsSeriesModel>      
+< /Series>   
 
 
-<clsSeriesModel> We can define layout of chart’s series between <clsSeriesModel> & clsSeriesModel> 
+< clsSeriesModel> We can define layout of chart’s series between < clsSeriesModel> & clsSeriesModel> 
 
-<Binding> We can set column’s name which values we want to show horizontally or respect of Y axis.
+< Binding> We can set column’s name which values we want to show horizontally or respect of Y axis.
 
-<BindingX> We can set column’s name which values we want to show vertically or respect of X axis.
+< BindingX> We can set column’s name which values we want to show vertically or respect of X axis.
  
 *Output ->*
 
@@ -464,7 +468,7 @@ TYPE: In this tag we can set SUM
 
 ![](/images/DashBoardXML.png)
 
-<DASHBOARD>: <DASHBOARD> is starting tag & </DASHBOARD> is ending tag.
+< DASHBOARD >: < DASHBOARD > is starting tag & < /DASHBOARD> is ending tag.
 
 **How to define a Panel:** We can define a panel for dashboard using below code.
 

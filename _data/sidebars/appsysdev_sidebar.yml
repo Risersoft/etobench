@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: AppSystemDeveloper
+  product: AppFx Desktop
   
   folders:
 
@@ -25,6 +25,12 @@ entries:
     url: /appsystem-developer/introduction.html
     folderitems:
     -
+    
+  - title: Product
+    output: single
+    url: /appsystem-developer/product.html
+    folderitems:
+    -    
 
   - title: Applications
     output: single
@@ -80,12 +86,6 @@ entries:
     folderitems:
     -
     
-  - title: Product
-    output: single
-    url: /appsystem-developer/product.html
-    folderitems:
-    -
-    
   - title:  DB Permissions
     output: single
     url: /appsystem-developer/db-permission.html
@@ -98,7 +98,7 @@ entries:
     folderitems:
     -    
     
-  - title:  Publishing to SaasMatter
+  - title:  Publishing to SaasMatter LiveBI
     output: single
     url: /appsystem-developer/publish-to-saasmatter.html
     folderitems:
