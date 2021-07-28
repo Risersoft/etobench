@@ -81,11 +81,6 @@ entries:
     folderitems:
     -
     
-  - title:  DB Permissions
-    output: single
-    url: /appsystem-developer/db-permission.html
-    folderitems:
-    -
     
   - title:  Publish AppDB File
     output: single

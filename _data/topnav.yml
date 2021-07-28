@@ -25,7 +25,7 @@ topnav_dropdowns:
  
         - title: AppFx Desktop
           url: /appsystem-developer/introduction.html
-        - title: AppFx Developer
+        - title: AppFx Web
           url: /appsystem-developer-web/introduction.html         
         - title: Web Development Workflow
           url: /web-development-workflow/introduction.html

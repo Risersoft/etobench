@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: AppFx Developer
+  product: AppFx Web
   
   folders:
 
@@ -56,6 +56,12 @@ entries:
     url: /appsystem-developer-web/form-report-functions.html
     folderitems:
     -
+    
+  - title: Form Definition with Zero Code
+    output: single
+    url: /appsystem-developer-web/form-definition-zero-code.html
+    folderitems:
+    -    
     
     
   - title: Navigation

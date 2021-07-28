@@ -12,7 +12,7 @@ entries:
     - title: AppFx Desktop
       url: /appsystem-developer/introduction.html
       output: single
-    - title: AppFx Developer
+    - title: AppFx Web
       url: /appsystem-developer-web/introduction.html  
       output: single
     - title: Web Development Workflow

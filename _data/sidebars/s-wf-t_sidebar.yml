@@ -74,3 +74,9 @@ entries:
     url: /security-workflow-task/schedule-tasks.html
     folderitems:
     -
+    
+  - title: DB Permission
+    output: single
+    url: /security-workflow-task/DB-Permission.html
+    folderitems:
+    -    
