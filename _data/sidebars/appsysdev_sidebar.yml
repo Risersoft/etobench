@@ -80,11 +80,6 @@ entries:
     url: /appsystem-developer/filter.html
     folderitems:
     -
-  - title: Work Flow
-    output: single
-    url: /appsystem-developer/workflow.html
-    folderitems:
-    -
     
   - title:  DB Permissions
     output: single

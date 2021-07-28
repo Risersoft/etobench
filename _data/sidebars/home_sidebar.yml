@@ -5,7 +5,7 @@ entries:
   levels: one
   folders:
 
-  - title: Products
+  - title: Modules
     output: single
     folderitems:
 
@@ -27,4 +27,7 @@ entries:
     - title: Database Development Workflow
       url: /db-development-workflow/introduction.html
       output: single
+    - title: Security, WorkFlow and Task
+      url: /security-workflow-task/introduction.html
+      output: single      
 
