@@ -200,32 +200,32 @@ _**Description**_:
 
 *Tags For Body Syntax:*
 
-<ROOT>
+< ROOT>
 
-<TOOLBAR KEY="mnuMain" BEFORE="1">
+< TOOLBAR KEY="mnuMain" BEFORE="1">
 
-</TOOLBAR>
+< /TOOLBAR>
 
-</ROOT>
+< /ROOT>
 
 
 *Tags for Menu:*
 
-<TOOL BG="1" KEY="ID_Myprofile" STYLE="BUT" NAME="My Profile" ICON = "MyProfile.png">
+< TOOL BG="1" KEY="ID_Myprofile" STYLE="BUT" NAME="My Profile" ICON = "MyProfile.png">
 
-<TAG>
+< TAG>
 
-<VIEW KEY="ViewMyProfile"></VIEW>
+< VIEW KEY="ViewMyProfile"></VIEW>
 
-</TAG>
+< /TAG>
 
-</TOOL>
+< /TOOL>
 
 *Tags for Image Icon:*
 
 We can used ICON for item menu image.
   
-   Eg. ICON = "MyProfile.png"
+     Eg. ICON = "MyProfile.png"
    
 *OutPut:*
 

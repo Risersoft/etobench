@@ -40,9 +40,15 @@ User can select application in this block.
 
 ![](/images/navigationAppmenuweb.png)
 
-**Menu Tag** ->User can menu definition for navigation in this block.
+**Menu Tag** ->User can define menu definition for navigation in this block.
 
-![](/images/menutag.jpg)
+    E.g:
+	
+	< VIEW KEY="viewSalesOrder">< IDX VALUE="%SalesOrderid%"/>< /VIEW>
+	
+*VIEW KEY*: Using this tag we can set view key for navigation.
+*IDX VALUE*:Using tis tag we can set IDX value for IDX based value view.
+
 
 **Menu Category** ->User can set menu category in this block like
 Nav for navigation.

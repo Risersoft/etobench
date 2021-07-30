@@ -417,7 +417,7 @@ CHILD ->Set child using give value 1, 2 etc.
 
 **ChartXML**->
 
-![](/images/chartxml.png)
+![](/images/chartxml.jpg)
 
 < clsChartModel >  is starting Tag & < /clsChartModel >  is ending tag of chart definition.
 

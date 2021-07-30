@@ -66,47 +66,71 @@ After choosing any one option, the browser form will appear.
 
 >Browser Definition Tab
 
-![](/images/browserdefinitiontabweb.jpg)
+![](/images/browserdefinitiontabweb.png)
 
-**&lt;ROOT>**->Starting Tag Browse definition.
+**<ROOT> & </ROOT>**: Root tag is body syntax.
+    
+**How to define BrowserID**:
 
-**&lt;ID>BROWSEID&lt;/ID>** ->User can define browse ID in this block
+< ID>BROWSEID< /ID>: This tag used to define browser id.
 
-**&lt;DISPGRID>** -> Starting Tag for grid display.
+   E.g : <ID>BROWSEID</ID>
 
-**&lt;VIEW KEY** ->starting tag for view key assign
+**How to set display grid**:
 
-**&lt;DISPGRID>** -> Ending Tag for grid display.
+< DISPGRID>< /DISPGRID>: This tag used to set display grid.
+   
+   E.g:
+   
+  < DISPGRID>
+  < VIEW KEY="viewCustomer" />
+  < /DISPGRID>
+  
+**How to define a tree**:
 
-**&lt;TREE>** -> Starting Tag for Browse tree
+< TREE>< /TREE>: Tree tag is body syntax.
 
-**<_DT KEY** -> User can set sql query for data source.
+**How set Sql for data source**:
 
-**&lt;_SET>**: This tag used to define variable for store data locally.
+< _DT>: Using this we can set sql for data source.
 
-**<NODE KEY** ->Starting Tag for Add Node.
+  E.g:
+  
+< _DT KEY="o" SQL="select CustomerID,isnull(Title,'')+' '+isnull(FirstName,'')+' '+isnull(MiddleName,'')+' '+isnull(LastName,'') as Customer from  Sales.Customer INNER JOIN Person.Person  ON Customer.PersonID = Person.BusinessEntityID where CustomerID = $BROWSEID$ order by Title,FirstName" />
 
-**NODE PARENT:** Using this we can set parent id for to be added node.
+**How to define local variable to store values**:
 
-**KEY:**Using this we can set key for to be added node.
+< _SET>: This tag used to define variable for store data locally.
 
-**CAPTION:**Using this tag we can set caption for added node.
+  E.g:
+  
+< _SET VAR="CUST" VALUE="#MEMBER($o$,CustomerID)#" />
 
-**&lt;VIEW KEY**->User can assign view key in this block.
+**How to add a Node**:
 
-**&lt;FILTER KEY** ->User can set filter key.					
+< NODE>: Using this tag we can define Node as per requirement.
 
-**&lt;VALUE VALUE1**->Assign filter value.				
+  E.g:
+  
+< NODE PARENT="ID1"  KEY="Custso" CAPTION="Sale Orders">
 
-**&lt;/FILTER>** ->Ending tag for Filter Key.
+*NODE PARENT*: Using this we can set parent id for to be added node.
+*KEY*:Using this we can set key for to be added node.
+*CAPTION*:Using this tag we can set caption for added node.
 
-**&lt;/VIEW>** ->Ending tag for View.
+**How to set view for added node**:
 
-**&lt;/NODE>** ->Ending tag for Node.
+< VIEW KEY >: using this tag we can set view for added node.
 
-**&lt;/TREE>** -> Ending Tag for Browse tree.
+< VIEW KEY="ListAdvdemCustomer">
 
-**&lt;/ROOT>** -> Ending Tag Browse definition.
+*FILTER KEY*
+              
+< FILTER KEY="customer">
+< VALUE VALUE1="$CUST$" />
+< /FILTER>
+< /VIEW>
+
 
 **Output:**
 

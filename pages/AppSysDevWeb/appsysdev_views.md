@@ -318,23 +318,51 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 ![](/images/complexweb.png)
 
-**&lt;DISPGRID>** ->Starting tag
+*DISPGRID* -> We can set display grid between < DISPGRID>starting & < DISPGRID> ending tags.
+ 
+     e.g: < DISPGRID> 
+          < VIEW KEY="ViewStore"/>  
+          < /DISPGRID>
+		  
+*MAINGRID* -> we can define main grid using < MAINGRID >starting & < MAINGRID > ending tags.
 
-**&lt;/DISPGRID>** -> Ending tag
+     e.g: < MAINGRID>    
+          < VIEW KEY="ListAdvdemStore">    
+          < /MAINGRID>
+		  
+*VIEW KEY* -> User can set view for display grid.
 
-**&lt;MAINGRID>** ->Starting tag
+     e.g: < VIEW KEY="ListAdvdemStore">
+	 
+*MODROW* ->We can applied user define conditions like where condition, hidecolums etc
 
-**VIEW KEY** -> User can set view for display grid
+     e.g: < MODROW>    
+          < SQLWHERE2>BusinessEntityID= %idx% < /SQLWHERE2>  
+          < HIDECOLS>Name< /HIDECOLS>
+          < /MODROW>
+		  
+*SQLWHERE2*-> we can applied where condition between < SQLWHERE> & < /SQLWHERE>
 
-**&lt;MAINGRID>** -> Ending tag
+     e.g :< MODROW>    
+          < SQLWHERE2>BusinessEntityID= %idx% < /SQLWHERE2>  
+          < /MODROW>
 
-**&lt;MAKEREL INSERTAT** ->set default value 0.
 
- **BANDS** ->User can combine all child’s view in this section.
+*HIDECOLS* ->We can hide columns using < HIDECOLS> & < /HIDECOLS>.
 
- **FIELD** ->Set idfield
+     e.g :< MODROW>    	
+          < HIDECOLS>Name< /HIDECOLS>
+          < /MODROW>
+		  
+*MAKEREL INSERTAT* ->set default value 0.
 
- **CHILD** ->Set child using give value 1,2 etc.
+*BANDS* ->User can combine all child’s view in this section.
+ 
+*FIELD* ->Set idfield 
+ 
+*CHILD* ->Set child using give value 1, 2 etc.
+
+Output:
 
 ![](/images/complexchild.png)
 
@@ -376,7 +404,7 @@ User can define summary totals for views in this block
 
 ![](/images/definesummaryweb.png)
 
-**<SUMARY COL KEY>**-> Using this tag we can set db column name which total is required.
+**< SUMARY COL KEY >**-> Using this tag we can set db column name which total is required.
 
 **KEY** : Set total key word Totbal.
 
@@ -393,7 +421,39 @@ User can define summary totals for views in this block
 
 **ChartXML**->
 
-![](/images/chartxmlweb.png)
+![](/images/chartxmlweb.jpg)
+
+< clsChartModel>  is starting Tag & < /clsChartModel>  is ending tag of chart definition.
+
+**< Legend>  & < /Legend>** : We can define orientation & position between starting & ending tag of Legend.
+
+   E.g
+   
+ < Legend>        
+ < Orientation>Auto< /Orientation>   
+ < Position>None< /Position>    
+ < Title />    
+ < /Legend>
+ 
+**< ChartType>**: We can set chart type of charts like Column,LineSymbols,Pie,Area between < ChartType>  & < /ChartType> 
+
+**< Series>**: We can define multiple series for showing data grid between < Series> & < /Series>.
+       
+  Like this:
+  
+ < Series>      
+ < clsSeriesModel> 
+ < ChartType>column< /ChartType>      
+ < Binding>Empcount< /Binding>          
+ < BindingX>GroupName< /BindingX>     
+ < /clsSeriesModel>      
+ < /Series>   
+**<clsSeriesModel>**: We can define layout of chart’s series between < clsSeriesModel> & < /clsSeriesModel>
+ 
+**<Binding>**: We can set column’s name which values we want to show horizontally or respect of Y axis.
+
+**<BindingX>**: We can set column’s name which values we want to show vertically or respect of X axis.
+
 
 *Output*:
 
@@ -415,6 +475,34 @@ User can define summary totals for views in this block
 
 ![](/images/DashBoardXMLweb.png)
 
+**<DASHBOARD>**: < DASHBOARD> is starting tag & < /DASHBOARD>  is ending tag.
+
+**How to define a Panel**: we can define a panel for dashboard using below code.
+
+  < CONTENT>   
+  < PANEL>     
+  < VIEW KEY="chtAdvdemDepvsEmp">< /VIEW>    
+  < /PANEL>   
+  < /CONTENT>  
+  
+**How to define Layout of dashboard**:
+
+  < LAYOUT>    
+  < ROW>     
+  < COLUMN CSSCLASS="col-md-12">    
+  < ROW>       
+  < COLUMN PANEL="0"  CSSCLASS="col-md-6"/>    
+  < COLUMN PANEL="1"  CSSCLASS="col-md-6"/>      
+  < /ROW>      
+  < ROW>    
+  < COLUMN PANEL="2"  CSSCLASS="col-md-6"/>       
+  < COLUMN PANEL="3"  CSSCLASS="col-md-6"/>     
+  < /ROW>     
+  < /COLUMN>    
+  < /ROW>   
+  < /LAYOUT>
+
+
 *Output*:
 
 ![](/images/DashBoardXMLOutputweb.png)
@@ -425,6 +513,21 @@ User can define summary totals for views in this block
 
 ![](/images/TotalsXMLweb.png)
 
+**< TOTAL>** is starting tag and < /TOTAL> is ending tag.
+
+**< TITLE>**: we can set title for display.
+
+**< FIELD>** is starting tag and </FIELD> is ending tag.
+
+**< KEY>**: We set column for which total required like this.
+ 
+   E.g: KEY=”Taxval”
+
+**< SUM>**: We can use sum key word for calculate sum value of set column.
+
+   E.g: SUM=”SUM”
+
+
 *Output* ->
 
 ![](/images/totalsxmloutputweb.png)
@@ -434,6 +537,55 @@ User can define summary totals for views in this block
 User can define mobile views output in this block.
 
 ![](/images/listtabweb.png)
+
+*Config*: We can define all list view xml code between < Config> & < /Config>
+
+     E.g.:
+	 
+![](/images/listtabconfigweb.png)
+
+*Headline*: We can define heading using < Headline> & < /Headline>.
+
+     E.g.:
+	
+![](/images/listtabheadweb.png)
+
+*Template*: we can set caption, formatting for passed arguments with position values starting 0 like {0}, {1}, {2}…etc.
+
+     E.g.:
+	 
+![](/images/listtabtempweb.png)
+
+*Arguments*: we can pass database columns as arguments like this.
+
+     E.g.:
+	 
+![](/images/listtabargweb.png)
+
+*Secondline*: we can set sub heading using < Secondline> & < / Secondline> tags.
+
+     E.g.:
+
+![](/images/listtabscdweb.png)
+
+*Summary*: We can set details for summary using < summary> & < /summary> tags.
+
+     E.g.:
+	 
+![](/images/listtabsumweb.png)
+
+We can merge all details in a single line using | key words like this.
+
+     E.g.:
+
+![](/images/listtabsummweb.png)
+
+*Punchtext*: we can set index or any special text parallel of main Headline using < Punchtext> & < Punchtext> tags.
+
+     E.g.:
+	 
+![](/images/listtabpunchweb.png)	 
+	 
 
 *Output* ->
 

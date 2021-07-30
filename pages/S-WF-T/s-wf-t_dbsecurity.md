@@ -34,7 +34,7 @@ We can set object’s code like Application, Browser, Entity, Forms/Reports/Func
 
 ![](/images/dbsecurityformreportfunc.png)
 
-**Browser **: We can set accessibility for Browser using object type =Browser
+**Browser**: We can set accessibility for Browser using object type =Browser
 
 ![](/images/dbsecuritybrowser.png)
 
@@ -42,7 +42,7 @@ We can set object’s code like Application, Browser, Entity, Forms/Reports/Func
 
 ![](/images/dbsecuritynav.png)
 
-**Workflow **:  We can set accessibility for platform using object type = Workflow
+**Workflow**:  We can set accessibility for platform using object type = Workflow
 
 ![](/images/dbsecuritywf.png) 
 
