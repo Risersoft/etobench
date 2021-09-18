@@ -38,8 +38,6 @@ comments: false
 
 **Output**:  Accessibility of College
 
-We can colleges for accessibility clicking on + sign.
-
 We can change college clicking on change.
 
 ![](/images/dbrolecollege.png)

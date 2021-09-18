@@ -48,10 +48,40 @@ entries:
     folderitems:
     -
   - title: Views
-    output: single
+    output: web,pdf
     url: /appsystem-developer/views.html
+    
     folderitems:
-    -
+    
+    - title: Data Source
+      url: /appsystem-developer/views-datasource.html
+      output: web, pdf    
+    
+    - title: Common
+      url: /appsystem-developer/views-common.html
+      output: web, pdf     
+    
+    - title: Reports
+      url: /appsystem-developer/views-reports.html
+      output: web, pdf 
+
+    - title: Grid
+      url: /appsystem-developer/views-grid.html
+      output: web, pdf       
+    
+    - title: Chart
+      url: /appsystem-developer/views-chart.html
+      output: web, pdf   
+    
+    - title: Dashboard
+      url: /appsystem-developer/views-dashboard.html
+      output: web, pdf 
+      
+    - title: List 
+      url: /appsystem-developer/views-list.html
+      output: web, pdf   
+   
+      
   - title: Browser
     output: single
     url: /appsystem-developer/browser.html

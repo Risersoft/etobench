@@ -48,6 +48,12 @@ entries:
     output: single
     url: /code-environment-setup/code-project-setup.html
     folderitems:
-    -   
+    -  
+
+  - title: Steps for InnoSetup
+    output: single
+    url: /code-environment-setup/steps-for-innoSetup.html
+    folderitems:
+    -       
 
   
