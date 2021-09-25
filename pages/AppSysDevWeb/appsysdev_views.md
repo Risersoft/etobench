@@ -55,8 +55,6 @@ After choosing any one option, the View form will appear.
 
 ![](/images/fixedwhere.png)
 
-![](/images/useridx.png)
-
 **Object Permission Role** -> No need to make any changes for those objects which are called directly in MainMenuXML and If objects are not called directly in MainMenuXML then find all possible navigation for called these objects & set  the parent object's keys with , if found more than one. We can enter cross object type parent by specifying *viewdef.key or frp.key or bro.key*
 
      E.g: viewkey.ListInvoice or frp.frmInvoice or bro.Invoice

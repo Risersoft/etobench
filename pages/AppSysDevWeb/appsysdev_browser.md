@@ -68,7 +68,7 @@ After choosing any one option, the browser form will appear.
 
 ![](/images/browserdefinitiontabweb.png)
 
-**<ROOT> & </ROOT>**: Root tag is body syntax.
+**< ROOT> & < /ROOT>**: Root tag is body syntax.
     
 **How to define BrowserID**:
 

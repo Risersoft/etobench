@@ -15,13 +15,13 @@ User can define mobile views output in this block.
 
 ![](/images/listtab.png)
 
-**Config:** We can define all list view xml code between <Config> & </Config>
+**Config:** We can define all list view xml code between < Config> & < /Config>
 
   E.g.:
   
 ![](/images/listtabconfig.png)
  
-**Headline:** We can define heading using <Headline> & </Headline>.
+**Headline:** We can define heading using < Headline> & < /Headline>.
 
   E.g.:
   
@@ -45,20 +45,20 @@ User can define mobile views output in this block.
   
 ![](/images/listtabsecondline.png)
 
-**Summary:** We can set details for summary using <summary> & </summary> tags.
+**Summary:** We can set details for summary using < summary> & < /summary> tags.
 
   E.g.:
   
 ![](/images/listtabsummary.png)
 
-We can merge all details in a single line using | key words like this.
+We can merge all details in a single line using ![](/images/keywordsep.png) key words like this.
 
   E.g.:
   
 ![](/images/listtabsummary1.png)  
 
 
-**Punchtext:** we can set index or any special text parallel of main Headline using Punchtext> & <Punchtext> tags.
+**Punchtext:** we can set index or any special text parallel of main Headline using < Punchtext> & < /Punchtext> tags.
 
   E.g.:
   

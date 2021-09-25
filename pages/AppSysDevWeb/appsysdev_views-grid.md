@@ -112,7 +112,7 @@ User can define summary totals for views in this block
 
 *FORMAT:* we can set format for required total values.We can also use different format specifier as per below.
 
-![](/images/summaryformatweb.jpg)
+![](/images/summaryformat.jpg)
 
 *TYPE:* In this tag we can set SUM.
 
@@ -142,7 +142,7 @@ SUM-> We can use sum key word for calculate sum value of set column.
 
 **Output** ->
 
-![](/images/totalsxmloutputweb.jpg)
+![](/images/totalsxmloutputweb.png)
 
 
 

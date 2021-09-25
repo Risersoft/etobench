@@ -18,7 +18,7 @@ Click on New-> New Navigation
 
 **Application** ->User can select application in this block.
 
-**Product**** ->User can set product for created Navigation in this block.
+**Product** ->User can set product for created Navigation in this block.
 
 **Nav Code** ->User can set Code for created Navigation.it is **unique** for publisher and product.
 

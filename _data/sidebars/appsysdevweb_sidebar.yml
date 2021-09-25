@@ -25,6 +25,12 @@ entries:
     url: /appsystem-developer-web/introduction.html
     folderitems:
     -
+    
+  - title: Product
+    output: single
+    url: /appsystem-developer-web/product.html
+    folderitems:
+    -    
 
   - title: Applications
     output: single
@@ -109,11 +115,7 @@ entries:
     folderitems:
     -
     
-  - title: Product
-    output: single
-    url: /appsystem-developer-web/product.html
-    folderitems:
-    -
+
     
 
     

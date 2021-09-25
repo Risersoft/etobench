@@ -203,7 +203,7 @@ User can format of columns of visible column like Caption, Date format etc.
 
 **Output**:
 
-![](/images/formatxmloutputweb.jpg)
+![](/images/formatxmloutputweb.png)
 
 
 

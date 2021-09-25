@@ -12,29 +12,29 @@ comments: false
 
 ![](/images/reportweb.png)
 
-Max Font Size -> User can set font size of printing output.
+**Max Font Size** -> User can set font size of printing output.
 
-Filter for Printing -> User can set filter which apply only when printing output.
+**Filter for Printing** -> User can set filter which apply only when printing output.
 
-Hide Columns-> User cat set columns which are not require for printing.
+**Hide Columns**-> User cat set columns which are not require for printing.
 
-Print Vertical Grid Lines -> Default value is null.
+**Print Vertical Grid Lines** -> Default value is null.
 
-SERIAL -> Set true if require serial number on MMR output.
+**SERIAL** -> Set true if require serial number on MMR output.
 
-DETAILHTFACT -> Set row height for MMR output.
+**DETAILHTFACT** -> Set row height for MMR output.
 
-HEADER PREFIX -> Set Header of MMR output.
+**HEADER PREFIX** -> Set Header of MMR output.
 
-EVAL -> Set Evaluate value like date
+**EVAL** -> Set Evaluate value like date
 
-FORMAT-> Set for mat of evaluate value.
+**FORMAT**-> Set for mat of evaluate value.
 
-GROUP FIELD -> Set Field name on which output should be group by.
+**GROUP FIELD** -> Set Field name on which output should be group by.
 
-TYPE-> Set type of group by
+**TYPE**-> Set type of group by
 
-< /MMR> ->Ending Tag.
+**< /MMR>** ->Ending Tag.
 
 
 
@@ -84,13 +84,13 @@ Output ->
 
 **GROUP FIELD** ->We can set column for grouping using this tag.
 
-![](/images/MMRXMLGroupfieldweb.png)
+![](/images/MMRXMLGroupfieldweb.jpg)
 
-*TYPE 1*: Using this type of group we can set column for display records as per give column in Group Field and values of this column display right align.
+**TYPE-1**: Using this type of group we can set column for display records as per give column in Group Field and values of this column display right align.
 
-*TYPE 2*: If we want left align for group field then we can use this.
+**TYPE-2**: If we want left align for group field then we can use this.
 
-*TYPE 3*: If we want to page break for display records of group field  then we can use this.
+**TYPE-3**: If we want to page break for display records of group field  then we can use this.
 
 Output ->
 
