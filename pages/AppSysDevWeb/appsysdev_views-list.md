@@ -51,14 +51,14 @@ User can define mobile views output in this block.
   
 ![](/images/listtabsummaryweb.png)
 
-We can merge all details in a single line using ![](/images/keywordsep.png) key words like this.
+![](/images/keywordsep.png)
 
   E.g.:
   
 ![](/images/listtabsummary1web.png)  
 
 
-**Punchtext:** we can set index or any special text parallel of main Headline using Punchtext> & <Punchtext> tags.
+**Punchtext:** we can set index or any special text parallel of main Headline using < Punchtext> & < Punchtext> tags.
 
   E.g.:
   

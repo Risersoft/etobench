@@ -51,7 +51,7 @@ User can define mobile views output in this block.
   
 ![](/images/listtabsummary.png)
 
-We can merge all details in a single line using ![](/images/keywordsep.png) key words like this.
+![](/images/keywordsep.png)
 
   E.g.:
   

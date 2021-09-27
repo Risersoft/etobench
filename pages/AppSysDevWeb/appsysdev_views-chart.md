@@ -27,17 +27,17 @@ comments: false
 < /Legend>
 
     
-< ChartType> We can set chart type of charts like Column,LineSymbols,Pie,Area between <ChartType>  & </ChartType> 
+< ChartType> We can set chart type of charts like Column,LineSymbols,Pie,Area between < ChartType >  & < /ChartType> 
 
-< Series>   We can define multiple series for showing data grid between <Series> & </Series>.   
+< Series>   We can define multiple series for showing data grid between < Series > & < /Series>.   
     
      Like this: 
 	 
 < Series>      
 < clsSeriesModel> 
-< ChartType>column</ChartType>      
-< Binding>Empcount</Binding>          
-< BindingX>GroupName</BindingX>     
+< ChartType>column< /ChartType>      
+< Binding>Empcount< /Binding>          
+< BindingX>GroupName< /BindingX>     
 < /clsSeriesModel>      
 < /Series>   
 

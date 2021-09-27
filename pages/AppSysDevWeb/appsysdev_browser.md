@@ -22,7 +22,7 @@ After choosing any one option, the browser form will appear.
 
 ![](/images/browseroptionstabweb.png)
 
->Browser Options Tab
+>**Browser Options Tab**
 
 **Browser Key** ->User can set browser key in this block ,Entered Key should be unique for publisher and product.
 
@@ -64,7 +64,7 @@ After choosing any one option, the browser form will appear.
 
 
 
->Browser Definition Tab
+>**Browser Definition Tab**
 
 ![](/images/browserdefinitiontabweb.png)
 
@@ -137,7 +137,7 @@ After choosing any one option, the browser form will appear.
 ![](/images/BrowserDefinitionFormoutput.png)
 
 
->DataXML Tab
+>**DataXML Tab**
 
 
 **SysEntXML** -> 
@@ -172,7 +172,7 @@ Using this tag we can set grid condition for browser.
 
 ![](/images/GridConditionWeb.jpg)
 
->Children Tab
+>**Children Tab**
 
 Click on **Add New** button. 
 

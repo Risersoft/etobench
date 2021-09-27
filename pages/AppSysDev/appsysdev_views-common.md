@@ -15,7 +15,7 @@ comments: false
 
 **Transform Before** -> Transform before worked before view output generated.
 
-![](/images/TransformBefore.jpg)
+![](/images/TransformBefore.png)
 
 **< MAINGRID >** is starting tag and **< /MainGrid>** is ending tag.
 
@@ -37,7 +37,7 @@ comments: false
 
 *View Output before Transformation*
 
-![](/images/TransformAfter.jpg)
+![](/images/TransformAfter.png)
 
 **ADDCOL** ->Column name which is to be added.
 

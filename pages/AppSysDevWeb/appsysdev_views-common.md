@@ -186,7 +186,7 @@ User can set print layout as per view output known as MMR.it is define in XML an
 
 Output ->
 
-![](/images/ConditionXMLOutputweb.png)
+![](/images/ConditionXMLOutputweb.jpg)
 
 
 ## FormatXML
