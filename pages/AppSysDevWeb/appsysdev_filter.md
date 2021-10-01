@@ -80,10 +80,10 @@ Click on New->New Filter
 
 Click on Appsystem->Filters
 
-![](/images/filterlistweb.jpg)
+![](/images/filterlistweb.png)
 
 ## Edit
 
 Click on Appsystem->Filters->Right->Click->Edit Filters
 
-![](/images/editfilterweb.jpg)
+![](/images/editfilterweb.png)

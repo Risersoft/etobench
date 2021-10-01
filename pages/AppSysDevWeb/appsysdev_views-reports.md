@@ -99,15 +99,15 @@ Output ->
 
 **ALIGN** -> We use this tag for align.
 
-![](/images/MMRXMLAlignweb.png)
+![](/images/MMRXMLAlignweb.jpg)
 
 **SUMM FIELD** -> We set column name for showing total.
 
-![](/images/MMRXMLSummFieldweb.png)
+![](/images/MMRXMLSummFieldweb.jpg)
 
 Output ->
 
-![](/images/MMRXMLSummFieldOutputweb.png)
+![](/images/MMRXMLSummFieldOutputweb.jpg)
 
 **FOOTER PREFIX** -> We can set text to display on footer using this tag.
 

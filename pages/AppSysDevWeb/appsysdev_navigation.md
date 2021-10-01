@@ -24,7 +24,7 @@ Click on New-> New Navigation
 
 **Nav Code** ->User can set Code for created Navigation.it is **unique** for publisher and product.
 
-**Sortindex** ->User can sortindex for created navigation it i**s require sequencing for right click option.
+**Sortindex** ->User can sortindex for created navigation it is require sequencing for right click option.
 
 **Nav Caption** ->User can set display name for created navigation in this block.
 
