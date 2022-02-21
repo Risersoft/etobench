@@ -15,18 +15,14 @@ topnav_dropdowns:
     - title: Help
       folderitems:
 
-        - title: AppSystemDeveloper
-          external_url: http://appsframework.com/
+        
         - title: Risersoft
           external_url: http://www.risersoft.com/
         
     - title: Modules
       folderitems:
  
-        - title: AppFx Desktop
-          url: /appsystem-developer/introduction.html
-        - title: AppFx Web
-          url: /appsystem-developer-web/introduction.html         
+                 
         - title: Web Development Workflow
           url: /web-development-workflow/introduction.html
         - title: Windows Development Workflow

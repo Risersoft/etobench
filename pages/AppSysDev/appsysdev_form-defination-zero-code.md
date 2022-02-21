@@ -38,11 +38,11 @@ In this section, we have define definition of forms in XML format.
 
 ![](/images/definition-sql-example.jpg)
 
-**Step-3** 
-
-![](/images/definition-map-combokey.png)
+**Step-3** : We can map combo’s key with lookup key in this section : 
 
 **3.1** *Lookups* -> -> We can map combo’s key with mainSql’s columns and childrensql’s columns under formatxml (between < formatxml > and < /formatxml >) or prepeditxml (between < prepeditxml > and < /prepeditxml >) section like this.
+
+![](/images/definition-map-combokey.png)
 
 **3.2** *Key Field* -> we can use tags for define key field using key word < KEY > as starting tag < /KEY > as ending tag. 
 
