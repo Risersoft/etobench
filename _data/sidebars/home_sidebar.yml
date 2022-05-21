@@ -9,25 +9,23 @@ entries:
     output: single
     folderitems:
 
-    - title: AppFx Desktop
-      url: /appsystem-developer/introduction.html
+    - title: FileMinister
+      url: /file-minister-web/introduction.html
       output: single
-    - title: AppFx Web
-      url: /appsystem-developer-web/introduction.html  
+    - title: FormulaCAD for Inventor
+      url: /FormulaCAD-inventor/introduction.html  
       output: single
-    - title: Web Development Workflow
-      url: /web-development-workflow/introduction.html
+    - title: FormulaCAD for Inventor Tutorial
+      url: /FormulaCAD-inventor-tutorial/introduction.html
       output: single
-    - title: Windows Development Workflow
-      url: /windows-development-workflow/introduction.html
+    - title: FormulaCAD for AutoCAD
+      url: /FormulaCAD-autocad/introduction.html
       output: single      
-    - title: Code and Environment Setup
-      url: /code-environment-setup/introduction.html
+    - title: PowerBOM Windows
+      url: /powerbom-win/introduction.html
       output: single
-    - title: Database Development Workflow
-      url: /db-development-workflow/introduction.html
+    - title: VisualCircuit
+      url: /visual-circuit/introduction.html
       output: single
-    - title: Security, WorkFlow and Task
-      url: /security-workflow-task/introduction.html
-      output: single      
+          
 

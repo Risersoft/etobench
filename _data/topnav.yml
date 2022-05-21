@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/Risersoft/Appfx
+      external_url: https://github.com/Risersoft/etobench
     - title: Blog
       url: /blog
 
@@ -23,15 +23,16 @@ topnav_dropdowns:
       folderitems:
  
                  
-        - title: Web Development Workflow
-          url: /web-development-workflow/introduction.html
-        - title: Windows Development Workflow
-          url: /windows-development-workflow/introduction.html
-        - title: Code and Environment Setup
-          url: /code-environment-setup/introduction.html
-        - title: Database Development Workflow
-          url: /db-development-workflow/introduction.html
-        - title: Security, WorkFlow and Task
-          url: /security-workflow-task/introduction.html         
-        
+        - title: FileMinister
+          url: /file-minister-web/introduction.html
+        - title: FormulaCAD for Inventor
+          url: /FormulaCAD-inventor/introduction.html
+        - title: FormulaCAD for Inventor Tutorial
+          url: /FormulaCAD-inventor-tutorial/introduction.html
+        - title: FormulaCAD for AutoCAD
+          url: /FormulaCAD-autocad/introduction.html
+        - title: PowerBOM Windows
+          url: /powerbom-win/introduction.html         
+        - title: VisualCircuit
+          url: /visual-circuit/introduction.html 
           
